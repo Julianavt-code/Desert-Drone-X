@@ -22,7 +22,7 @@ public class scripts : MonoBehaviour
         UpdateTextgemamorada();
         UpdateTextgemaverde();
         UpdateTextcofre();
-        UpdateTextNotifications("Recolecta lo que te hace falta");
+        UpdateTextNotifications("Recolecta las gemas perdidas");
     }
 
     // Update is called once per frame
@@ -69,7 +69,7 @@ public class scripts : MonoBehaviour
         {
        
             touchremolino = true;
-            UpdateTextNotifications("Has ocado el remolino, perdiste :(");
+            UpdateTextNotifications("Has tocado el remolino, perdiste :(");
             Debug.Log("has tocado el remolino, perdiste");
             Destroy(gameObject);
         }

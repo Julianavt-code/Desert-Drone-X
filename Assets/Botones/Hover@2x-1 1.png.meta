@@ -103,12 +103,12 @@ TextureImporter:
       name: Hover@2x-1 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 392
-        height: 168
+        x: 105
+        y: 56
+        width: 196
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cf292cf5095944f458f79864d83249fe
     internalID: 0
     vertices: []
     indices: 

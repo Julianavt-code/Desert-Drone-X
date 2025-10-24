@@ -16,6 +16,8 @@ public class scripts : MonoBehaviour
     public TextMeshProUGUI textNotifications;
     public int cofre = 0;
 
+    public GameObject GameOverPanel; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -67,11 +69,12 @@ public class scripts : MonoBehaviour
         }
         if (other.CompareTag("remolino"))
         {
-       
+
             touchremolino = true;
             UpdateTextNotifications("Has tocado el remolino, perdiste :(");
             Debug.Log("has tocado el remolino, perdiste");
-            Destroy(gameObject);
+            GameOverPanel.SetActive(true);
+            Time.timeScale = 0f;
         }
 
         if (other.CompareTag("cofre"))

@@ -9,6 +9,8 @@ public class Buttons : MonoBehaviour
 
     public GameObject InstruccionesPanel;
 
+    public GameObject GameOverPanel;
+
  public GameObject CreditsPanel;
 
     public GameObject SettingsPanel;

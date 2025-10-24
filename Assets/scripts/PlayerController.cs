@@ -56,7 +56,7 @@ public class scripts : MonoBehaviour
         }
          if (other.CompareTag("gemaverde"))
         {
-            gemaverde = gemaverde + 2;
+            gemaverde = gemaverde + 1;
             UpdateTextgemaverde();
 
             Destroy(other.gameObject);
@@ -95,7 +95,6 @@ public class scripts : MonoBehaviour
             Debug.Log("ganaste");
         }
 
-       
 
     }
 
@@ -112,7 +111,7 @@ public class scripts : MonoBehaviour
     {
         textCofre.text = "cofre dorado: " + cofre + "/1";
     }
-   
+    
     void UpdateTextNotifications(string message)
     {
         textNotifications.text =  message;

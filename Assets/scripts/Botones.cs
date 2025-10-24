@@ -7,19 +7,25 @@ using UnityEngine.UI;
 public class Buttons : MonoBehaviour
 {
 
-    public GameObject CreditsPanel;
+    public GameObject InstruccionesPanel;
 
+ public GameObject CreditsPanel;
 
     public GameObject SettingsPanel;
 
+    public GameObject PausePanel;
+
+    public bool IsPaused = false;
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
+        Time.timeScale = 1f;        
     }
 
     public void GoMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1f;        
     }
 
     public void ExitGame()
@@ -37,6 +43,11 @@ public class Buttons : MonoBehaviour
         CreditsPanel.SetActive(false);
     }
 
+     public void InstruccionesOff()
+    {
+        InstruccionesPanel.SetActive(false);
+    }
+
      public void SettingsOn()
     {
         SettingsPanel.SetActive(true);
@@ -45,6 +56,20 @@ public class Buttons : MonoBehaviour
     public void SettingsOff()
     {
         SettingsPanel.SetActive(false);
+    }
+
+    public void PauseOn()
+    {
+        PausePanel.SetActive(true);
+        Time.timeScale = 0f;
+        IsPaused = true;
+    }
+
+    public void PauseOff()
+    {
+        PausePanel.SetActive(false);
+        Time.timeScale = 1f;
+        IsPaused = false;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
